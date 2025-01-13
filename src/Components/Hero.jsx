@@ -14,7 +14,7 @@ const Hero = () => {
             </p>
             <CustomButton title='Get Started' />
         </div>
-        <img className='p-0 rounded-3xl' src={hero} alt="" />
+        <img className='p-0 rounded-3xl w-[50%]' src={hero} alt="" />
     </div>
   )
 }
