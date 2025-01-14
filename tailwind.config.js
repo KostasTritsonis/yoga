@@ -7,16 +7,15 @@ export default {
       colors: {
         'primary': '#0F2E15',
         'secondary': '#4b624b',
-      }
-    },
-    fontFamily: {
-        plight: ["Teko-Light", "sans-serif"],
-        pregular: ["Teko-Regular", "sans-serif"],
-        pmedium: ["Teko-Medium", "sans-serif"],
-        psemibold: ["Teko-SemiBold", "sans-serif"],
-        pbold: ["Teko-Bold", "sans-serif"],
+      },
+      fontFamily: {
+        tregular: ["Teko", "serif"],
+        gregular:[ "Geo", "serif"],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
 
