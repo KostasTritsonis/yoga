@@ -39,13 +39,13 @@ const TeamCard = ({element, image, text}) => {
       <Fade in={open} unmountOnExit timeout={500} >
       <div className={"flex flex-col justify-center 2xl:w-[800px] xl:[700px] md:w-[700px] sm:w-[500px] 2xl:h-[800px] md:h-[700px] sm:h-[550px]  bg-background rounded-3xl"}>
         <div className='grid grid-cols-2'>
-          <div className='flex '>
+          <div className='flex justify-center items-center'>
               <img src={image} className='2xl:w-[300px] xl:w-[240px] lg:w-[240px] sm:w-[180px] w-[160px] h-[260px] rounded-e-full' alt="" />
           </div>
           
           <div className='flex flex-col justify-center '>
-              <p className='text-primary 2xl:text-5xl xl:text-4xl lg:text-4xl md:text-3xl text-2xl'>Services Offered</p>
-              <p className='text-secondary w-[80%] pt-5'>{text}</p>
+              <p className='text-primary 2xl:text-5xl xl:text-4xl lg:text-4xl md:text-3xl text-[23px] '>Services Offered</p>
+              <p className='text-secondary sm:w-[80%]  pt-5'>{text}</p>
           </div>
         </div>
       <div className='grid grid-cols-2 lg:grid-cols-3 gap-10 max-md:hidden'>
