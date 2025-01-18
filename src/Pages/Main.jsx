@@ -1,9 +1,12 @@
 import React from 'react'
-import Hero from '../Components/Hero'
-import Services from '../Components/Services'
-import Benefits from '../Components/Benefits'
-import Team from '../Components/Team'
+import Hero from '../Pages/Main/Hero'
+import Services from '../Pages/Main/Services'
+import Benefits from '../Pages/Main/Benefits'
+import Team from '../Pages/Main/Team'
 import AnimatedElement from '../Components/AnimatedElement'
+import Contact from '../Pages/Main/Contact'
+import FAQ from '../Pages/Main/FAQ'
+import Footer from '../Pages/Main/Footer'
 
 const Main = () => {
   return (
@@ -12,6 +15,9 @@ const Main = () => {
         <AnimatedElement children={<Benefits />} />
         <AnimatedElement children={<Services />} />
         <AnimatedElement children={<Team />} />
+        <AnimatedElement children={<Contact />} />
+        <AnimatedElement children={<FAQ />} />
+        <AnimatedElement children={<Footer />} />
     </div>
   )
 }

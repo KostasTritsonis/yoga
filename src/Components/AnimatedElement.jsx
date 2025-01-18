@@ -1,37 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
+import { useInView } from "react-intersection-observer";
 
 const AnimatedElement = ({ children }) => {
-  const elementRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
+  const { ref, inView } = useInView({
+    triggerOnce: true, 
+    threshold: 0.3,    
+  });
   return (
-    <div
-      ref={elementRef}
-      className={`opacity-0  duration-500 ${
-        isVisible ? 'opacity-100 animate-fade-up animate-once antialiased' : ''
-      }`}
-    >
+    <div ref={ref} className={`${inView ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
       {children}
     </div>
   );
 };
+
 
 export default AnimatedElement;
