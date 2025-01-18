@@ -1,9 +1,14 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import contact from '../assets/contact2.webp'
 import Footer from './Main/Footer'
 import AnimatedElement from '../Components/AnimatedElement'
 
 const Contact = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to top on mount
+      }, []);
+
   return (
     <>
         <AnimatedElement>

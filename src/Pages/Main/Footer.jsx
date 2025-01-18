@@ -12,8 +12,7 @@ const Footer = () => {
                     <h1 className="max-w-lg text-xl font-semibold tracking-tight text-primary xl:text-2xl">Subscribe our newsletter to get update.</h1>
 
                     <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
-                        <input id="email" type="text" autoComplete='off' className="px-4 py-2 text-secondary bg-white border rounded-md  
-                         focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-primary" placeholder="Email Address"/>
+                        <input id="email" type="text" autoComplete='off' className="px-4 py-2 w-[60%] placeholder-primary bg-transparent border-b border-primary focus:outline-none " placeholder="Email Address"/>
                 
                         <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto
                          md:mx-4 focus:outline-none bg-primary rounded-lg hover:bg-secondary  ">
