@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <>
         <AnimatedElement>
-        <div className='flex justify-center max-lg:items-center max-lg:flex-col max-md: gap-14 mt-32 mb-40 lg:ml-60 '>
+        <div className='flex justify-center max-lg:items-center max-lg:flex-col max-md: gap-14 mt-16 mb-20 lg:ml-60 '>
             <div className=''>
                 <img src={contact} className='rounded-3xl 2xl:w-[900px] xl:w-[700px] md:w-[700px]  ' alt="" /> 
             </div>

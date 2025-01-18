@@ -13,7 +13,7 @@ const Trainers = () => {
 
   return (
     <>
-      <AnimatedElement children={<Hero />} />
+      <Hero />
       <AnimatedElement children={<Contact />} />
       <AnimatedElement children={<FAQ />} />
       <AnimatedElement children={<Footer />} />
