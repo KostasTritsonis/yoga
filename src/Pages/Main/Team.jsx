@@ -11,7 +11,7 @@ const Team = () => {
       <h2 className='text-5xl text-primary pb-20'>Meet Our Team</h2>
 
       <div className="flex justify-center items-center max-lg:flex-col ">
-        <div className='bg-primary p-7 2xl:w-[370px] xl:w-[300px] lg:w-[250px] md:w-[650px] sm:w-[510px] 
+        <div className='bg-primary p-7 2xl:w-[370px] xl:w-[300px] lg:w-[250px] md:w-[650px] w-[530px] 
           2xl:h-[600px] xl:h-[550px] lg:h-[450px] md:h-[250px] rounded-3xl'>
           <p className='pb-2'>JOIN THE TEAM</p>
           <p className='2xl:text-[29px] xl:text-[24px] lg:text-[18px] max-lg:text-[20px]'>Personalized Coaching</p>  

@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Modal from '@mui/material/Modal'
+import { Modal,Fade} from "@mui/material";
 import yoga1 from '../assets/yoga1.png'
 import group from '../assets/group.png'
 import CustomButton from './CustomButton'
@@ -16,11 +16,11 @@ const TeamCard = ({element, image, text}) => {
 
   return (
     <>
-    <div className="group 2xl:w-[370px] md:w-[315px] sm:w-[250px]  2xl:h-[600px] xl:h-[550px] lg:h-[450px] h-[450px]
+    <div className="group 2xl:w-[370px] md:w-[315px] w-[250px] 2xl:h-[600px] xl:h-[550px]  h-[450px]
       overflow-hidden rounded-3xl ">
         <div className="w-full h-full duration-500 group-hover:[transform:scale(1.1)] ">
             <div className="absolute flex items-center justify-center bg-black bg-opacity-50
-              2xl:w-[370px] md:w-[315px] sm:w-[250px] 2xl:h-[600px] xl:h-[550px] lg:h-[450px] md:h-[450px] sm:h-[450px] 
+              2xl:w-[370px] md:w-[315px] w-[250px] 2xl:h-[600px] xl:h-[550px] h-[450px]
              text-white text-3xl font-tregular opacity-0 transition-opacity duration-500 group-hover:opacity-100">
               <button onClick={handleOpen}>{element}</button>
               
@@ -37,7 +37,8 @@ const TeamCard = ({element, image, text}) => {
       aria-describedby="modal-modal-description"
       className='flex items-center justify-center'
     >
-      <div className={"flex flex-col justify-center w-[900px] h-[800px] bg-background rounded-3xl"}>
+      <Fade in={open} unmountOnExit timeout={500} >
+      <div className={"flex flex-col justify-center w-[800px] h-[800px] bg-background rounded-3xl"}>
         <div className='grid grid-cols-2'>
           <div className='flex '>
               <img src={image} className='w-[300px] rounded-e-full' alt="" />
@@ -48,7 +49,7 @@ const TeamCard = ({element, image, text}) => {
               <p className='text-secondary w-[80%] pt-5'>{text}</p>
           </div>
         </div>
-      <div className='grid grid-cols-2 lg:grid-cols-3 gap-10 mt-24'>
+      <div className='grid grid-cols-2 lg:grid-cols-3 gap-10 mt-8'>
         <div className='flex flex-col items-center'>
             <img src={yoga1} className="w-[50px]" alt="" />
             <p className='text-primary text-3xl max-lg:text-2xl'>Yoga Sessions</p>
@@ -77,10 +78,11 @@ const TeamCard = ({element, image, text}) => {
             <p className='text-secondary w-[60%] max-lg:w-[80%] text-center'>Immersive workshops that deepen your practice and enhance your overall wellness.</p>
           </div>
         </div>
-        <div className='flex justify-center items-center mt-20'>
+        <div className='flex justify-center items-center mb-4'>
             <Link to="/contact"><CustomButton text="Book A Consultation" /></Link>
         </div>
       </div>
+      </Fade>
     </Modal>
     
     </>

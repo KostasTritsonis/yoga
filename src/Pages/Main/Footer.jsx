@@ -45,14 +45,14 @@ const Footer = () => {
             
             <hr className="my-6 mt-12  border-gray-700"/>
             
-            <div className="flex md:mb-10 items-center justify-between">
+            <div className="flex md:mb-10 gap-14 items-center justify-between">
                 <a href="/">
                     <p className="text-primary font-tregular text-5xl">HARMONY</p>
                 </a>
 
                 <p>© 2025 Harmony Yoga and Fitness Studio. All rights reserved</p>
             </div>
-            <p className='text-secondary opacity-70'>Designed by Konstantinos Tritsonis. Icons by Icons8</p>
+            <p className='text-secondary mt-4 opacity-70'>Designed by Konstantinos Tritsonis. Icons by Icons8</p>
         </div>
         
     </footer>
