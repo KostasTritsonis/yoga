@@ -7,17 +7,17 @@ import yoga from '../../assets/yoga.png'
 const Services = () => {
   return (
     <div className='container mx-auto'>
-      <div className='flex mt-52 justify-between'>
+      <div className='md:flex mt-52 md:justify-between '>
         <div className=' text-primary font-pregular mb-16'>
-          <p className='text-5xl pb-5'>Our Services</p>
-          <p className='text-secondary w-[50%] max-lg:w-[65%]'>Whether you're a beginner or an advanced practitioner, our offerings are designed to inspire and
+          <p className='text-5xl pb-5 max-md:text-center'>Our Services</p>
+          <p className='text-secondary  md:w-[65%] max-md:text-center'>Whether you're a beginner or an advanced practitioner, our offerings are designed to inspire and
           support you on your wellness journey. </p>
         </div>
-        <div className='w-[25%] max-lg:w-[50%] items-center '>
+        <div className=' lg:w-[50%] max-md:flex max-md:justify-center '>
           <CustomButton text='Explore the services' /> 
         </div>
       </div>
-      <div className='grid grid-cols-2 lg:grid-cols-3 gap-10 pb-40'>
+      <div className='grid grid-cols-2 lg:grid-cols-3 max-md:pt-16 gap-10 pb-40'>
         <div className='flex flex-col items-center'>
           <img src={yoga} className="w-[70px]" alt="" />
           <p className='text-primary text-3xl max-lg:text-2xl'>Yoga Classes</p>

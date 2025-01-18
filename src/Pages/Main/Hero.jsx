@@ -6,7 +6,7 @@ import CustomButton from '../../Components/CustomButton'
 const Hero = () => {
   return (
     <div className='lg:flex lg:justify-center lg:items-center my-32 pb-28 container mx-auto'>
-        <div className='max-lg:text-center flex-col max-lg:pb-5 pr-10'>
+        <div className='max-lg:text-center flex-col max-lg:pb-5 lg:pr-10'>
             <h1 className='2xl:text-7xl text-6xl  text-primary font-tregular font-semibold pb-5 '>
               Transform Your <br /> Body and Mind
             </h1>

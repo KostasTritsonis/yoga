@@ -52,7 +52,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className="overflow-hidden rounded-xl lg:col-span-2 h-96 lg:h-auto">
+                <div className="overflow-hidden rounded-3xl lg:col-span-2 h-96 lg:h-auto">
                 <iframe width="100%" height="100%"  title="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50310.55897734267!2d23.697139782777263!3d37.990897659523114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2zzpHOuM6uzr3OsQ!5e0!3m2!1sel!2sgr!4v1736977532117!5m2!1sel!2sgr"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
