@@ -20,17 +20,17 @@ const Services = () => {
       <div className='grid grid-cols-2 lg:grid-cols-3 max-md:pt-16 gap-10 pb-40'>
         <div className='flex flex-col items-center'>
           <img src={yoga} className="w-[70px]" alt="" />
-          <p className='text-primary text-3xl max-lg:text-2xl'>Yoga Classes</p>
+          <p className='text-primary text-3xl text-center max-lg:text-2xl'>Yoga Classes</p>
           <p className='text-secondary w-[60%] max-lg:w-[80%] text-center'>Classes for all levels, from beginners to advanced. Enjoy various styles like Hatha, Vinyasa, and Yin Yoga.</p>
         </div>
         <div className='flex flex-col items-center'>
-          <img src={strong} className="w-[70px]"  alt="" />
-          <p className='text-primary text-3xl max-lg:text-2xl'>Fitness Training</p>
+          <img src={strong} className="w-[70px] "  alt="" />
+          <p className='text-primary text-3xl text-center max-lg:text-2xl'>Fitness Training</p>
           <p className='text-secondary w-[60%] max-lg:w-[80%] text-center'>Personalized training programs tailored to your fitness goals. Focus on strength and flexibility.</p>
         </div>
         <div className='flex flex-col max-lg:col-span-2 items-center'>
           <img src={heart} className="w-[70px]" alt="" />
-          <p className='text-primary text-3xl max-lg:text-2xl'>Wellness Laps</p>
+          <p className='text-primary text-3xl text-center max-lg:text-2xl'>Wellness Laps</p>
           <p className='text-secondary w-[60%] max-lg:w-[80%] text-center'>Explore workshops on mindfulness, stress relief, and holistic wellness. Suitable for all levels of experience.</p>
         </div>
       </div>
