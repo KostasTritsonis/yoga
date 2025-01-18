@@ -37,18 +37,18 @@ const TeamCard = ({element, image, text}) => {
       className='flex items-center justify-center'
     >
       <Fade in={open} unmountOnExit timeout={500} >
-      <div className={"flex flex-col justify-center w-[800px] h-[800px] bg-background rounded-3xl"}>
+      <div className={"flex flex-col justify-center 2xl:w-[800px] xl:[700px] md:w-[700px] w-[400px] 2xl:h-[800px] md:h-[700px] h-[450px]  bg-background rounded-3xl"}>
         <div className='grid grid-cols-2'>
           <div className='flex '>
-              <img src={image} className='w-[300px] rounded-e-full' alt="" />
+              <img src={image} className='2xl:w-[300px] xl:w-[220px] md:w-[180px]  w-[180px]  rounded-e-full' alt="" />
           </div>
           
           <div className='flex flex-col justify-center '>
-              <p className='text-primary text-5xl'>Services Offered</p>
+              <p className='text-primary xl:text-5xl lg:text-4xl md:text-3xl text-2xl'>Services Offered</p>
               <p className='text-secondary w-[80%] pt-5'>{text}</p>
           </div>
         </div>
-      <div className='grid grid-cols-2 lg:grid-cols-3 gap-10 mt-8'>
+      <div className='grid grid-cols-2 lg:grid-cols-3 gap-10 max-md:hidden'>
         <div className='flex flex-col items-center'>
             <img src={yoga1} className="w-[50px]" alt="" />
             <p className='text-primary text-3xl max-lg:text-2xl'>Yoga Sessions</p>
@@ -59,8 +59,8 @@ const TeamCard = ({element, image, text}) => {
             <p className='text-primary text-3xl max-lg:text-2xl'>Group Classes</p>
             <p className='text-secondary w-[60%] max-lg:w-[80%] text-center'>Dynamic group sessions designed to improve flexibility, strength, and mindfulness.</p>
         </div>
-        <div className='flex flex-col  items-center'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20%" viewBox="0 0 55 55" fill="none" className="icon-1x1-large">
+        <div className='flex flex-col max-lg:col-span-2 items-center'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10%" viewBox="0 0 55 55" fill="none" className="icon-1x1-large">
             <path d="M17.6008 26.6197C18.2836 26.7337 18.9535 26.9146 19.6008 27.1597C21.9052 28.443 23.9967 30.0757 25.8008 31.9997C26.4719 32.6474 27.3682 33.0094 28.3008 33.0094C29.2335
             33.0094 30.1297 32.6474 30.8008 31.9997L35.0008 27.9997C35.2773 27.727 35.6109 27.5191 35.9775 27.3911C36.3442 27.2631 36.7347 27.2182 37.1208 27.2597C37.52 27.2901 37.9072 27.4102
               38.2535 27.6111C38.5997 27.8119 38.8962 28.0883 39.1208 28.4197L44.8008 36.9397C44.9312 37.1345 45.0214 37.3534 45.066 37.5835C45.1107 37.8136 45.1089 38.0503 45.0608 38.2797C44.9618
@@ -74,10 +74,10 @@ const TeamCard = ({element, image, text}) => {
                     stroke="#0F2E15" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path><path d="M32.2402 8.45996L35.8402 12L32.2402 15.58" stroke="#0F2E15" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round"></path>
                     <path d="M25.1797 12H35.8397" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg>
             <p className='text-primary text-3xl max-lg:text-2xl'>Workshops</p>
-            <p className='text-secondary w-[60%] max-lg:w-[80%] text-center'>Immersive workshops that deepen your practice and enhance your overall wellness.</p>
+            <p className='text-secondary sm:w-[60%] max-lg:w-[80%] text-center'>Immersive workshops that deepen your practice and enhance your overall wellness.</p>
           </div>
         </div>
-        <div className='flex justify-center items-center mb-4'>
+        <div className='flex justify-center items-center pb-4'>
             <Link to="/contact"><CustomButton text="Book A Consultation" /></Link>
         </div>
       </div>
