@@ -12,13 +12,13 @@ const Contact = () => {
   return (
     <>
         <AnimatedElement>
-        <div className='flex justify-center gap-14 mt-32 mb-40 ml-60 '>
+        <div className='flex justify-center max-lg:items-center max-lg:flex-col max-md: gap-14 mt-32 mb-40 lg:ml-60 '>
             <div className=''>
-                <img src={contact} className='rounded-3xl w-[900px]' alt="" /> 
+                <img src={contact} className='rounded-3xl 2xl:w-[900px] xl:w-[700px] md:w-[700px]  ' alt="" /> 
             </div>
-            <div className='flex flex-col justify-center w-[35%]'>
-                <p className='text-primary text-6xl'>Get in Touch.</p>
-                <p className='text-primary leading-tight text-xl w-[70%]'>I want to help you overcome all mental and physical hurdles in your everyday life. 6 Years ago,
+            <div className='flex flex-col justify-center lg:w-[35%] md:w-[70%]'>
+                <p className='text-primary 2xl:text-6xl xl:text-5xl lg:text-4xl text-3xl'>Get in Touch.</p>
+                <p className='text-primary leading-tight 2xl:text-xl xl:text-lg md:text-md '>I want to help you overcome all mental and physical hurdles in your everyday life. 6 Years ago,
                      I was electrocuted with 277 volts. I suffered 3rd degree burns on my hand and needed neck surgery and they said i couldn’t be able to make a full recovery.</p>
                 <div className='mt-10'>
                     <form autoComplete='off'  action="" className='flex flex-col '>

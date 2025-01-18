@@ -21,26 +21,30 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div>
-                    <p className="font-semibold text-primary">Ouick Links</p>
+                <div className='flex max-md:justify-between  justify-evenly'>
+                    <div>
+                        <p className="font-semibold text-primary">Ouick Links</p>
 
-                    <div className="flex flex-col items-start mt-2 space-y-2">
-                        <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary">Home</a>
-                        <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary">Who We Are</a>
-                        <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary">Our Philosophy</a>
+                        <div className="flex flex-col items-start mt-2 space-y-2">
+                            <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary">Home</a>
+                            <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary">Who We Are</a>
+                            <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary">Our Philosophy</a>
+                        </div>
                     </div>
+                    
+                    <div>
+                        <p className="font-semibold text-primary">Follow us</p>
+
+                        <div className="flex flex-col items-start mt-2 space-y-2">
+                            <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary"><FacebookIcon  className='mr-3'/>Facebook</a>
+                            <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary"><InstagramIcon className='mr-3'/>Instagram</a>
+                            <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary"><XIcon className='mr-3'/>X-(Twitter)</a>
+                        </div>
+                    </div> 
+                    
+                    
     
-                </div>
-
-                <div>
-                    <p className="font-semibold text-primary">Follow us</p>
-
-                    <div className="flex flex-col items-start mt-2 space-y-2">
-                        <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary"><FacebookIcon  className='mr-3'/>Facebook</a>
-                        <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary"><InstagramIcon className='mr-3'/>Instagram</a>
-                        <a href="#" className="text-secondary transition-colors duration-300 hover:underline hover:text-primary"><XIcon className='mr-3'/>X-(Twitter)</a>
-                    </div>
-                </div>  
+                </div> 
             </div>
             
             <hr className="my-6 mt-12  border-gray-700"/>
