@@ -7,6 +7,7 @@ import card5 from '../assets/card5.webp'
 import card6 from '../assets/card6.webp'
 import Contact from '../Components/Contact'
 import Footer from '../Components/Footer'
+import { Link } from 'react-router-dom'
 
 
 const Blog = () => {
@@ -26,14 +27,14 @@ const Blog = () => {
             {/* Feature Cards */}
             <div className="flex flex-wrap justify-center gap-6 pt-10">
                 {[
-                    { icon: card1,button:'Fitness' ,title: "Full-Body Strength Training:Week Program",day:'5 January 2025' },
+                    { icon: card1,button:'Fitness' ,title: "Full-Body Strength Training:Week Program",day:'5 January 2025',id:":full-strength" },
                     { icon: card2,button:'Wellness' ,title: "Restorative Yoga for Stress Relief", day:'10 January 2025' },
                     { icon: card3,button:'Fitness' ,title: "10 Minute Fitness Boost: Quick Workouts",day:'13 January 2025' },
                     { icon: card4,button:'Wellness' ,title: "Morning RoutineL Start Your Day with Wellness", day:'25 January 2025' },
                     { icon: card5,button:'Yoga Sessions' ,title: "7 Day Yoga Flexibility Series for this Year",day:'3 February 2025' },
                     { icon: card6,button:'Yoga Sessions' ,title: "5 Day Challenge Trainer Series", },
                 ].map((item, index) => (
-                    <a href="/">
+                    <Link to="/blog:full-strength">
                     <div key={index} className=" group cursor-pointer relative w-full sm:w-[300px] md:w-[320px] lg:w-[370px] h-auto md:h-[470px]  lg:h-[470px] p-4 bg-white text-primary hover:bg-footer hover:border border-primary  rounded-3xl">
                         <div  className='overflow-hidden rounded-3xl'>
                             <div className='  flex w-full duration-500 group-hover:transform group-hover:scale-110 rounded-3xl'>
@@ -47,7 +48,7 @@ const Blog = () => {
                             <p className="text-sm sm:pt-20  pt-5">{item.day}</p>
                         </div>
                     </div>
-                    </a>
+                    </Link>
                 ))}
             </div>
         </div>

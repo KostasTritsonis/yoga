@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <div className='lg:flex lg:justify-center lg:items-center my-32 pb-28 container mx-auto'>
+    <div className='lg:flex lg:justify-center lg:items-center my-32 pb-20 container mx-auto'>
         <div className='max-lg:text-center flex-col max-lg:pb-5 lg:pr-10'>
             <h1 className='2xl:text-7xl text-6xl  text-primary font-tregular font-semibold pb-5 '>
               Transform Your <br /> Body and Mind
@@ -17,7 +17,7 @@ const Hero = () => {
             <Link to="/contact"><CustomButton text='Get Started' style="mt-5"/></Link>
         </div>
         <div className='flex justify-center items-center'>
-          <img className='rounded-3xl 2xl:w-[800px] xl:w-[600px] lg:w-[600px] ' src={hero} alt="" /> 
+          <img className='rounded-3xl 2xl:w-[800px] xl:w-[600px] lg:w-[600px] w-[350px] ' src={hero} alt="" /> 
         </div>
           
     </div>

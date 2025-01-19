@@ -6,6 +6,7 @@ import Main from './Pages/Main';
 import Contact from './Pages/Contact';
 import Plans from './Pages/Plans';
 import Blog from './Pages/Blog';
+import FullStength from './Pages/Blog/FullStength';
 
 function App() {
 
@@ -16,7 +17,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Main />}/>
           <Route path='/trainers' element={<Trainers />} />
-          <Route path='/blog' element={<Blog />} />
+          <Route path='/blog' element={<Blog />} >
+            <Route path='blog/full-strength' element={<FullStength />} />
+          </Route>
           <Route path='/plans' element={<Plans />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
