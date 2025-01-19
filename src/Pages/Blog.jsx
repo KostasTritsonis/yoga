@@ -33,15 +33,21 @@ const Blog = () => {
                     { icon: card5,button:'Yoga Sessions' ,title: "7 Day Yoga Flexibility Series for this Year",day:'3 February 2025' },
                     { icon: card6,button:'Yoga Sessions' ,title: "5 Day Challenge Trainer Series", },
                 ].map((item, index) => (
-                    <div key={index} className=" group overflow-hidden relative w-full sm:w-[300px] md:w-[320px] lg:w-[370px] h-auto  lg:h-[470px] p-6 bg-white text-primary hover:bg-footer hover:border border-primary  rounded-3xl">
-                        <div className='w-auto h-auto duration-500 group-hover:transform group-hover:scale-110 rounded-3xl'>
-                            <img src={item.icon} className="w-full h-full rounded-3xl" />
+                    <a href="/">
+                    <div key={index} className=" group cursor-pointer relative w-full sm:w-[300px] md:w-[320px] lg:w-[370px] h-auto md:h-[470px]  lg:h-[470px] p-4 bg-white text-primary hover:bg-footer hover:border border-primary  rounded-3xl">
+                        <div  className='overflow-hidden rounded-3xl'>
+                            <div className='  flex w-full duration-500 group-hover:transform group-hover:scale-110 rounded-3xl'>
+                                <img src={item.icon} className="w-full h-[200px]" />
+                            </div>
                         </div>
-                        <button className={`rounded-full bg-white hover:bg-opacity-90 text-primary font-medium border border-primary px-5 py-2 mt-5 group-hover:bg-primary group-hover:text-white`}>{item.button}</button>
-                        <h3 className="text-xl md:text-2xl  pt-3">{item.title}</h3>
-                        
-                        <p className="text-sm 2xl:pt-28  pt-5">{item.day}</p>
+                        <div>
+                            <button className={`rounded-full bg-white hover:bg-opacity-90 text-primary font-medium border border-primary px-5 py-2 mt-5 group-hover:bg-primary group-hover:text-white`}>{item.button}</button>
+                            <h3 className="text-xl md:text-2xl  pt-3">{item.title}</h3>
+                            
+                            <p className="text-sm sm:pt-20  pt-5">{item.day}</p>
+                        </div>
                     </div>
+                    </a>
                 ))}
             </div>
         </div>
