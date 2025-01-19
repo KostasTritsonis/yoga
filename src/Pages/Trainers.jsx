@@ -21,8 +21,7 @@ const Trainers = () => {
   return (
     <>
       <div className='container mx-auto mt-12'>
-        <div className='text-center text-primary mb-12 w-full sm:w-[300px] md:w-[315px] lg:w-[370px] 
-          h-[400px] sm:h-[450px] lg:h-[550px]'>
+        <div className='text-center text-primary mb-12 '>
             <p className='text-5xl mb-4'>Meet Our <br />Expert Coaches</p>
             <p>Our team of dedicated and experienced coaches is here to guide and support you <br /> on your wellness journey.</p>
         </div>
