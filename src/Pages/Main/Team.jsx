@@ -2,6 +2,7 @@ import React from 'react'
 import clare from '../../assets/clare.webp'
 import alicia from '../../assets/alicia.webp'
 import TeamCard from '../../Components/TeamCard'
+import { Link } from 'react-router-dom'
 
 const Team = () => {
   return (
@@ -16,18 +17,18 @@ const Team = () => {
     <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
         
         {/* Left Panel - Personalized Coaching */}
-        <div className="bg-primary p-7 rounded-3xl w-full sm:w-[550px]  md:w-[650px] lg:w-[370px]  h-[400px] sm:h-[350px] lg:h-[550px]">
+        <div className="bg-primary p-7 rounded-3xl w-full sm:w-[550px]  md:w-[650px] lg:w-[370px]  h-[250px] sm:h-[350px] lg:h-[550px]">
             <p className="text-lg font-medium pb-2">JOIN THE TEAM</p>
             <p className="text-xl sm:text-2xl lg:text-lg xl:text-xl font-semibold">Personalized Coaching</p>  
             <p className="text-sm sm:text-base lg:text-sm xl:text-base leading-tight max-lg:w-[70%]">
                 One-on-one sessions with our fitness and yoga experts. Get personalized guidance and encouragement
                 to reach your specific goals.
             </p>
-            <a href='/trainers'>
-                <button className="bg-background text-primary font-bold px-5 py-2 rounded-full hover:bg-opacity-70 transition-all duration-300 mt-32 lg:mt-60 xl:mt-72">
+            <Link to='/trainers'>
+                <button className="bg-background text-primary font-bold px-5 py-2 rounded-full hover:bg-opacity-70 transition-all duration-300 mt-3 lg:mt-60 xl:mt-72">
                     View more
                 </button>
-            </a>
+            </Link>
         </div>
 
         {/* Right Panel - Team Cards */}
