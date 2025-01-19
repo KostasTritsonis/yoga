@@ -17,9 +17,9 @@ const Plans = () => {
     <>
         <div className="container mx-auto mt-10 px-4">
             {/* Heading Section */}
-            <div className="text-center">
-                <p className="text-primary text-3xl sm:text-4xl md:text-5xl font-semibold">Why Choose Us?</p>
-                <p className="text-primary text-sm sm:text-base leading-6 pt-3 max-w-2xl ">
+            <div className=" text-center">
+                <p className="text-primary  text-3xl sm:text-4xl md:text-5xl font-semibold">Why Choose Us?</p>
+                <p className="text-primary text-sm sm:text-base leading-6 pt-3 max-w-2xl mx-auto ">
                     Our commitment to your wellness goes beyond just classes and training sessions. Discover the 
                     unique benefits that set us apart and ensure you have the best experience on your wellness journey.
                 </p>
