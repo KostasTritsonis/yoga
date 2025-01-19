@@ -13,7 +13,7 @@ const Hero = () => {
             <p className='text-secondary 2xl:text-lg max-lg:text-md'>
               Join us in transforming your body and mind <br /> through our comprehensive yoga <br /> and fitness programs.
             </p>
-            <CustomButton text='Get Started' style="mt-5" />
+            <a href="/contact"><CustomButton text='Get Started' style="mt-5"/></a>
         </div>
         <div className='flex justify-center items-center'>
           <img className='rounded-3xl 2xl:w-[800px] xl:w-[600px] lg:w-[600px] ' src={hero} alt="" /> 

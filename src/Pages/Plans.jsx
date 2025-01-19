@@ -19,14 +19,14 @@ const Plans = () => {
             {/* Heading Section */}
             <div className="text-center">
                 <p className="text-primary text-3xl sm:text-4xl md:text-5xl font-semibold">Why Choose Us?</p>
-                <p className="text-primary text-sm sm:text-base leading-6 pt-3 max-w-2xl mx-auto">
+                <p className="text-primary text-sm sm:text-base leading-6 pt-3 max-w-2xl ">
                     Our commitment to your wellness goes beyond just classes and training sessions. Discover the 
                     unique benefits that set us apart and ensure you have the best experience on your wellness journey.
                 </p>
             </div>
 
             {/* Feature Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-10">
+            <div className="flex flex-wrap justify-center   gap-6 pt-10">
                 {[
                     { icon: schedule, title: "Flexible Scheduling", text: "Adapt your fitness routine to your busy life with our flexible scheduling options. Choose from morning yoga, lunchtime fitness sessions, or evening workshops to fit your lifestyle." },
                     { icon: schedule, title: "Personalized Programs", text: "Achieve your goals with customized fitness and wellness programs tailored to your unique needs. Whether you’re starting out or pushing your limits, we’ll guide you every step of the way." },
@@ -51,7 +51,7 @@ const Plans = () => {
             </div>
 
             {/* Pricing Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
+            <div className="flex flex-wrap justify-center gap-6 pt-10">
                 {[
                     { name: "Starter Plan", price: "$14", features: ["8 yoga classes per month", "2 fitness training sessions per month", "Access to online resources", "Monthly wellness newsletter"] },
                     { name: "Basic Plan", price: "$29", features: ["Unlimited yoga classes", "4 fitness training sessions per month", "1 personalized coaching session per month", "Access to online resources", "Monthly wellness newsletter"], highlight: true },
@@ -59,7 +59,7 @@ const Plans = () => {
                 ].map((plan, index) => (
                     <div key={index} className={`flex flex-col items-center w-full sm:w-[320px] md:w-[340px] lg:w-[380px] h-auto sm:h-[450px] lg:h-[500px] p-8 text-center rounded-3xl shadow-lg transition-all duration-300 ${plan.highlight ? "bg-primary text-white" : "bg-white text-primary"}`}>
                         <p className="text-xl font-semibold">{plan.name}</p>
-                        <p className="text-5xl sm:text-7xl font-bold">{plan.price}</p>
+                        <p className="text-5xl sm:text-7xl ">{plan.price}</p>
                         <p className="text-sm">per user, per month</p>
                         <hr className={`mt-5 h-[2px] w-32 ${plan.highlight ? "bg-white" : "bg-primary"}`} />
                         <div className="mt-5 space-y-3">

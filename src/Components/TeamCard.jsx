@@ -37,7 +37,7 @@ const TeamCard = ({element, image, text}) => {
       className='flex items-center justify-center'
     >
       <Fade in={open} unmountOnExit timeout={500} >
-      <div className={"flex flex-col justify-center 2xl:w-[800px] xl:[700px] md:w-[700px] sm:w-[500px] w-[450px] 2xl:h-[740px] md:h-[700px] sm:h-[550px]  bg-background rounded-3xl"}>
+      <div className={"flex flex-col justify-center 2xl:w-[800px] xl:[700px] md:w-[700px] sm:w-[500px] w-[400px] 2xl:h-[740px] md:h-[700px] sm:h-[550px]  bg-background rounded-3xl"}>
         <div className='grid grid-cols-2'>
           <div className='flex'>
               <img src={image} className='2xl:w-[320px]  lg:w-[280px] sm:w-[205px] w-[160px] max-sm:h-[260px] rounded-e-full' alt="" />

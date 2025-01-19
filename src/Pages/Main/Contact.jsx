@@ -7,7 +7,7 @@ const Contact = () => {
             <div>
                 <p className=" text-primary">Contact us</p>
 
-                <h1 className="mt-2 text-2xl font-semibold text-primary md:text-5xl ">Get in touch</h1>
+                <h1 className="mt-2 text-2xl text-primary md:text-5xl ">Get in touch</h1>
 
                 <p className="mt-3 text-secondary">Our team would love to hear from you.</p>
             </div>

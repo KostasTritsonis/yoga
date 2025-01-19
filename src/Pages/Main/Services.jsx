@@ -3,7 +3,6 @@ import CustomButton from '../../Components/CustomButton'
 import heart from '../../assets/heart.png'
 import strong from '../../assets/strong.png'
 import yoga from '../../assets/yoga.png'
-import { Link } from 'react-router-dom'
 const Services = () => {
 
 
@@ -16,7 +15,7 @@ const Services = () => {
           support you on your wellness journey. </p>
         </div>
         <div className=' max-md:justify-center md:w-1/2 flex items-start  justify-end '>
-         <Link to='/plans'> <CustomButton text='Explore the services' /></Link>
+         <a href="/plans"> <CustomButton text='Explore the services' /></a>
         </div>
       </div>
       <div className='grid grid-cols-2 lg:grid-cols-3 max-md:pt-16 gap-10 pb-40'>

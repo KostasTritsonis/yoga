@@ -5,6 +5,7 @@ import Trainers from './Pages/Trainers';
 import Main from './Pages/Main';
 import Contact from './Pages/Contact';
 import Plans from './Pages/Plans';
+import Blog from './Pages/Blog';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Main />}/>
           <Route path='/trainers' element={<Trainers />} />
-          <Route path='/blog' element={null} />
+          <Route path='/blog' element={<Blog />} />
           <Route path='/plans' element={<Plans />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>

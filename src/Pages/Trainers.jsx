@@ -22,8 +22,9 @@ const Trainers = () => {
     <>
       <div className='container mx-auto mt-12'>
         <div className='text-center text-primary mb-12 '>
-            <p className='text-5xl mb-4'>Meet Our <br />Expert Coaches</p>
-            <p>Our team of dedicated and experienced coaches is here to guide and support you <br /> on your wellness journey.</p>
+            <p className='text-5xl mb-4 '>Meet Our <br />Expert Coaches</p>
+            <p className='sm:text-base mx-auto'>Our team of dedicated and experienced coaches is here to guide and support you <br />
+                on your wellness journey.</p>
         </div>
         <div className='flex sm:flex-wrap sm:justify-center max-sm:overflow-x-auto max-sm:flex-nowrap max-sm:scrollbar-hide gap-5 mt-8 '> 
           <div className='max-sm:flex-shrink-0'>
