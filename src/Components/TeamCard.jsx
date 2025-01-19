@@ -17,11 +17,10 @@ const TeamCard = ({element, image, text}) => {
 
   return (
     <>
-    <div className="group 2xl:w-[370px] md:w-[315px] sm:w-[300px] w-[250px] 2xl:h-[600px] xl:h-[550px]  h-[450px]
-      overflow-hidden rounded-3xl ">
-        <div className="w-full h-full duration-500 group-hover:[transform:scale(1.1)] ">
-            <div className="absolute flex items-center justify-center bg-black bg-opacity-50
-              2xl:w-[370px] md:w-[315px] sm:w-[300px] w-[250px] 2xl:h-[600px] xl:h-[550px]   h-[450px] 
+    <div className="group relative w-full sm:w-[300px] md:w-[315px] lg:w-[370px] 
+          h-[400px] sm:h-[450px] lg:h-[550px] overflow-hidden rounded-3xl ">
+        <div className="w-full h-full duration-500 group-hover:transform group-hover:scale-110">
+            <div className="absolute flex items-center justify-center w-full h-full bg-black bg-opacity-50
              text-white text-3xl font-tregular opacity-0 transition-opacity duration-500 group-hover:opacity-100">
               <button onClick={handleOpen}>{element}</button>
             </div>

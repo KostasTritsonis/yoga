@@ -10,12 +10,12 @@ const Services = () => {
   return (
     <div className='container mx-auto'>
       <div className='md:flex mt-52 md:justify-between '>
-        <div className=' text-primary font-pregular mb-16 w-1/2'>
+        <div className=' text-primary font-pregular mb-16'>
           <p className='text-5xl pb-5 max-md:text-center'>Our Services</p>
           <p className='text-secondary  md:w-[65%] max-md:text-center'>Whether you're a beginner or an advanced practitioner, our offerings are designed to inspire and
           support you on your wellness journey. </p>
         </div>
-        <div className=' max-md:justify-center w-1/2 flex items-start  justify-end '>
+        <div className=' max-md:justify-center md:w-1/2 flex items-start  justify-end '>
          <Link to='/plans'> <CustomButton text='Explore the services' /></Link>
         </div>
       </div>
