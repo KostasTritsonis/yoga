@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import contact from '../assets/contact2.webp'
-import Footer from './Main/Footer'
+import Footer from '../Components/Footer'
 import AnimatedElement from '../Components/AnimatedElement'
 
 const Contact = () => {
@@ -12,11 +12,11 @@ const Contact = () => {
   return (
     <>
         <AnimatedElement>
-        <div className='flex justify-center max-lg:items-center max-lg:flex-col max-md: gap-14 mt-16 mb-20 lg:ml-60 '>
+        <div className='flex justify-center max-xl:items-center max-xl:flex-col gap-14 mt-16 mb-20 xl:ml-60 '>
             <div className=''>
-                <img src={contact} className='rounded-3xl 2xl:w-[900px] xl:w-[700px] md:w-[700px]  ' alt="" /> 
+                <img src={contact} className='rounded-3xl 2xl:w-[900px] md:w-[700px]  ' alt="" /> 
             </div>
-            <div className='flex flex-col justify-center lg:w-[35%] md:w-[70%]'>
+            <div className='flex flex-col justify-center xl:w-[35%] md:w-[70%]'>
                 <p className='text-primary 2xl:text-6xl xl:text-5xl lg:text-4xl text-3xl'>Get in Touch.</p>
                 <p className='text-primary leading-tight 2xl:text-xl xl:text-lg md:text-md '>I want to help you overcome all mental and physical hurdles in your everyday life. 6 Years ago,
                      I was electrocuted with 277 volts. I suffered 3rd degree burns on my hand and needed neck surgery and they said i couldn’t be able to make a full recovery.</p>

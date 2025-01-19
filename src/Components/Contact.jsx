@@ -1,5 +1,5 @@
 import React from 'react'
-import contact from '../../assets/contact.webp'
+import contact from '../assets/contact.webp'
 
 const Contact = () => {
   return (

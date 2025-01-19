@@ -5,8 +5,8 @@ import Benefits from '../Pages/Main/Benefits'
 import Team from '../Pages/Main/Team'
 import AnimatedElement from '../Components/AnimatedElement'
 import Contact from '../Pages/Main/Contact'
-import FAQ from '../Pages/Main/FAQ'
-import Footer from '../Pages/Main/Footer'
+import FAQ from '../Components/FAQ'
+import Footer from '../Components/Footer'
 
 const Main = () => {
   return (

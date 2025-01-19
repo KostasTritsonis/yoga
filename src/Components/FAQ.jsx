@@ -1,4 +1,7 @@
 import React,{useState} from 'react'
+import { ReactSVG } from 'react-svg'
+import plus from '../assets/plus.svg'
+import minus from '../assets/minus.svg'
 
 
 const faqs = [
@@ -48,23 +51,6 @@ const FAQ = () => {
           );
     }
 
-    const minus = () => {
-        return(
-            <svg className="flex-shrink-0 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path>
-            </svg>
-        )
-    }
-
-    const plus = () => {
-        return(
-            <svg xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
-            </svg> 
-        )
-    }
-
-
   return (
     <section className="bg-primary">
         <div className="container px-6 py-10 mx-auto">
@@ -77,7 +63,7 @@ const FAQ = () => {
                         <div key={faq.id} className='flex items-center'>
                             <button  className={`flex  items-center focus:outline-none transform transition-transform
                                 duration-300 ease-in-out ${openFaqs.includes(faq.id)  ? "rotate-0" : "rotate-90"} `} onClick={()=>toggleFAQ(faq.id)}>
-                                {openFaqs.includes(faq.id) ? minus() : plus()}
+                                {openFaqs.includes(faq.id) ? <ReactSVG src={minus} className='text-white w-9'/> : <ReactSVG src={plus} className='text-white w-9'/>}
                             </button>
                             <h1 className="mx-4 text-xl text-white">{faq.question}</h1>
                         </div>

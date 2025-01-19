@@ -3,18 +3,20 @@ import CustomButton from '../../Components/CustomButton'
 import heart from '../../assets/heart.png'
 import strong from '../../assets/strong.png'
 import yoga from '../../assets/yoga.png'
-
+import { Link } from 'react-router-dom'
 const Services = () => {
+
+
   return (
     <div className='container mx-auto'>
       <div className='md:flex mt-52 md:justify-between '>
-        <div className=' text-primary font-pregular mb-16'>
+        <div className=' text-primary font-pregular mb-16 w-1/2'>
           <p className='text-5xl pb-5 max-md:text-center'>Our Services</p>
           <p className='text-secondary  md:w-[65%] max-md:text-center'>Whether you're a beginner or an advanced practitioner, our offerings are designed to inspire and
           support you on your wellness journey. </p>
         </div>
-        <div className=' lg:w-[50%] max-md:flex max-md:justify-center '>
-          <CustomButton text='Explore the services' /> 
+        <div className=' max-md:justify-center w-1/2 flex items-start  justify-end '>
+         <Link to='/plans'> <CustomButton text='Explore the services' /></Link>
         </div>
       </div>
       <div className='grid grid-cols-2 lg:grid-cols-3 max-md:pt-16 gap-10 pb-40'>
