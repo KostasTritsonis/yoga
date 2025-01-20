@@ -44,8 +44,7 @@ const Flexibility = () => {
               By the end of the 7 days, you should notice a significant improvement in your flexibility and a greater sense of ease in your yoga practice 
               and daily movements.</p>
           <div className=' flex items-center mb-40'>
-            <Link to="/blog"><img src={back} className='w-[50px]' alt="" /></Link>
-            <p className='ml-2 text-xl'>Back</p>
+            <Link className='flex items-center' to="/blog"><img src={back} className='w-[50px]' alt="" />Back</Link>
           </div>
         </div>
       </div>

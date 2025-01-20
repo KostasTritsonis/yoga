@@ -41,10 +41,8 @@ const MorningRoutine = () => {
               a mindfulness practice to set your intentions for the day. Over time, you may find that this routine helps you approach your day with a 
               greater sense of calm, focus, and well-being.</p>
           <div className=' flex items-center mb-40'>
-            <Link to="/blog"><img src={back} className='w-[50px]' alt="" /></Link>
-            <p className='ml-2 text-xl'>Back</p>
+           <Link className='flex items-center' to="/blog"><img src={back} className='w-[50px]' alt="" />Back</Link>
           </div>      
-          
         </div>
       </div>
       <Footer />

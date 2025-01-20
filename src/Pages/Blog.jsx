@@ -44,7 +44,7 @@ const Blog = () => {
                     <div  className=" group cursor-pointer relative w-full sm:w-[300px] md:w-[320px] lg:w-[370px] h-auto md:h-[470px]  lg:h-[470px] p-4 bg-white text-primary hover:bg-footer hover:border border-primary  rounded-3xl">
                         <div  className='overflow-hidden rounded-3xl'>
                             <div className='  flex w-full duration-500 group-hover:transform group-hover:scale-110 rounded-3xl'>
-                                <img src={item.icon} className="w-full h-[200px]" />
+                                <img src={item.icon} alt="" className="w-full h-[200px]" />
                             </div>
                         </div>
                         <div>

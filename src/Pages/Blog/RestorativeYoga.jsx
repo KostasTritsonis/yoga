@@ -40,8 +40,7 @@ const RestorativeYoga = () => {
               Each posture will be held for several minutes, giving you time to sink deeply into the pose and experience the full benefits of relaxation. 
               The session concludes with a guided meditation to leave you feeling peaceful and refreshed.</p>
           <div className=' flex items-center mb-40'>
-            <Link to="/blog"><img src={back} className='w-[50px]' alt="" /></Link>
-            <p className='ml-2 text-xl'>Back</p>
+            <Link className='flex items-center' to="/blog"><img src={back} className='w-[50px]' alt="" />Back</Link>
           </div>
         </div>
       </div>

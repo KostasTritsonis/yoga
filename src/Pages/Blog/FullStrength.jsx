@@ -50,11 +50,9 @@ const FullStrength = () => {
               and scalable to your fitness level. Modifications and variations are provided to accommodate different abilities, ensuring
               that everyone can participate and benefit from this strength training journey.</p>
           <div className=' flex items-center mb-40'>
-            <Link to="/blog"><img src={back} className='w-[50px]' alt="" /></Link>
-            <p className='ml-2 text-xl'>Back</p>
+            <Link className='flex items-center' to="/blog"><img src={back} className='w-[50px]' alt="" />Back</Link>
           </div>
         </div>
-        
       </div>
       <Footer />
     </>

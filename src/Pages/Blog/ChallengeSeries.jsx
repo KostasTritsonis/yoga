@@ -49,8 +49,7 @@ const ChallengeSeries = () => {
             I discuss some of these modifications during the workouts and include more details in the workout write-ups. While a majority of the exercises in 
             this challenge are performed lying on an exercise mat, there are some exercises we will do standing up.</p>
           <div className=' flex items-center mb-40'>
-            <Link to="/blog"><img src={back} className='w-[50px]' alt="" /></Link>
-            <p className='ml-2 text-xl'>Back</p>
+            <Link className='flex items-center' to="/blog"><img src={back} className='w-[50px]' alt="" />Back</Link>
           </div>
         </div>
       </div>

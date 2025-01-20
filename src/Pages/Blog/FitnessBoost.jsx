@@ -39,8 +39,7 @@ const FitnessBoost = () => {
               your strength, endurance, and cardiovascular fitness. Despite the short duration, these workouts are intense, so be prepared to sweat! 
               Modifications will be provided for different fitness levels, making these workouts accessible to everyone.</p>
           <div className=' flex items-center mb-40'>
-            <Link to="/blog"><img src={back} className='w-[50px]' alt="" /></Link>
-            <p className='ml-2 text-xl'>Back</p>
+            <Link className='flex items-center' to="/blog"><img src={back} className='w-[50px]' alt="" />Back</Link>
           </div>
         </div>
       </div>

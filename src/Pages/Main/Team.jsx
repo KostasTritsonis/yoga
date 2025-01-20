@@ -9,8 +9,8 @@ const Team = () => {
     <div className="container mx-auto mt-20 px-4 text-white">
     {/* Section Heading */}
     <div className="text-center">
-        <h4 className="text-primary text-lg ">OUR TEAM</h4>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl text-primary pb-10 ">Meet Our Team</h2>
+        <h2 className="text-primary text-lg ">OUR TEAM</h2>
+        <h3 className="text-3xl sm:text-4xl md:text-5xl text-primary pb-10 ">Meet Our Team</h3>
     </div>
 
     {/* Team Section */}
