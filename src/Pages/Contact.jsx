@@ -22,9 +22,9 @@ const Contact = () => {
                      I was electrocuted with 277 volts. I suffered 3rd degree burns on my hand and needed neck surgery and they said i couldn’t be able to make a full recovery.</p>
                 <div className='mt-10'>
                     <form autoComplete='off'  action="" className='flex flex-col '>
-                        <label  className='text-primary py-2'>Email (required)</label>
+                        <label for='email'  className='text-primary py-2'>Email (required)</label>
                         <input id='email' className=' w-[70%] bg-transparent border-b border-primary focus:outline-none ' autoComplete='off'  type="email"  required/>
-                        <label  className='text-primary py-2'>Message (required)</label>
+                        <label for='message' className='text-primary py-2'>Message (required)</label>
                         <input id='message' className='w-[70%] bg-transparent border-b border-primary focus:outline-none' autoComplete='off'  type="text"  required/>
                         <input className='rounded-full bg-primary hover:bg-opacity-90 text-white px-5 py-2 mt-5 w-32' type='submit' value={"Submit"}/>
                     </form>  

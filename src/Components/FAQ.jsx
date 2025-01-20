@@ -61,7 +61,7 @@ const FAQ = () => {
                 <div key={faq.id} >
                     <div>
                         <div className='flex items-center'>
-                            <button id={faq.id}  className={`flex  items-center focus:outline-none transform transition-transform
+                            <button name={faq.id}  className={`flex  items-center focus:outline-none transform transition-transform
                                 duration-300 ease-in-out ${openFaqs.includes(faq.id)  ? "rotate-0" : "rotate-90"} `} onClick={()=>toggleFAQ(faq.id)}>
                                 {openFaqs.includes(faq.id) ? <ReactSVG src={minus} className='text-white w-9'/> : <ReactSVG src={plus} className='text-white w-9'/>}
                             </button>

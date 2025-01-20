@@ -51,7 +51,7 @@ const Footer = () => {
 
                 <p>© 2025 Harmony Yoga and Fitness Studio. All rights reserved</p>
             </div>
-            <p className='text-secondary mt-4 opacity-70'>Designed by Konstantinos Tritsonis. Icons by Icons8</p>
+            <p className='text-primary mt-4 '>Designed by Konstantinos Tritsonis. Icons by Icons8</p>
         </div>
         
     </footer>
