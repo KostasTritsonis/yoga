@@ -13,6 +13,7 @@ export default {
       fontFamily: {
         tregular: ["Teko", "serif"],
         gregular:[ "Geo", "serif"],
+        iregular:["Instrument Sans", "serif"]
       },
     },
   },
