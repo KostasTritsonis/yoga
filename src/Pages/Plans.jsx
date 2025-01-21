@@ -26,7 +26,7 @@ const Plans = () => {
             </div>
 
             {/* Feature Cards */}
-            <div className="flex flex-wrap justify-center   gap-6 pt-10">
+            <div className="flex flex-wrap justify-center   gap-10 pt-10">
                 {[
                     { icon: schedule, title: "Flexible Scheduling", text: "Adapt your fitness routine to your busy life with our flexible scheduling options. Choose from morning yoga, lunchtime fitness sessions, or evening workshops to fit your lifestyle." },
                     { icon: schedule, title: "Personalized Programs", text: "Achieve your goals with customized fitness and wellness programs tailored to your unique needs. Whether you’re starting out or pushing your limits, we’ll guide you every step of the way." },
