@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className='lg:flex lg:justify-center lg:items-center my-32 pb-20 container mx-auto'>
         <div className='max-lg:text-center flex-col max-lg:pb-5 lg:pr-10'>
-            <h1 className='2xl:text-7xl text-6xl  text-primary font-tregular font-semibold pb-5 '>
+            <h1 className='2xl:text-6xl text-5xl  text-primary  font-semibold pb-5 '>
               Transform Your <br /> Body and Mind
             </h1>
             <p className='text-secondary 2xl:text-lg max-lg:text-md'>
